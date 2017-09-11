@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientNewUserController">
+   <children>
+      <BorderPane prefHeight="300.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label text="TabChat" textAlignment="CENTER" textFill="#808a8f" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="createNewButton" mnemonicParsing="false" onMouseClicked="#createNewUserButton" text="Create User" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <Label text="Name:" GridPane.halignment="CENTER" />
+                  <Label text="Last Name:" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label text="Username:" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <Label text="Password:" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Label text="Re-Enter Password:" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <TextField fx:id="nameLabel" GridPane.columnIndex="1" />
+                  <TextField fx:id="lastNameLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="createUserLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <PasswordField fx:id="createPassLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <PasswordField fx:id="rePassLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </center>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

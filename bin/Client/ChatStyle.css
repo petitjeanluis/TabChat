@@ -1,0 +1,42 @@
+
+.messageLabelMe{
+	-fx-wrap-text:true;
+	-fx-font-size:16px;
+	-fx-background-color:#5B85AA;
+	-fx-background-radius:5;
+	-fx-max-width:225;
+	-fx-label-padding:5,5,5,5;
+}
+.messageLabelOther{
+	-fx-wrap-text:true;
+	-fx-font-size:16px;
+	-fx-background-color:#F46036;
+	-fx-background-radius:5;
+	-fx-max-width:225;
+	-fx-label-padding:5,5,5,5;
+}
+
+.nameLabel{
+	-fx-wrap-text:false;
+	-fx-font-size:14px;
+	-fx-max-width:225;
+	-fx-pref-height:0;
+}
+
+.imageLabelMe{
+	-fx-background-color:#5B85AA;
+	-fx-background-radius:5;
+	-fx-max-width:225;
+	-fx-label-padding:5,5,5,5;
+}
+
+.imageLabelOther{
+	-fx-background-color:#F46036;
+	-fx-background-radius:5;
+	-fx-max-width:225;
+	-fx-label-padding:5,5,5,5;
+}
+
+.usersLabel{
+	-fx-font-size:18px;
+}

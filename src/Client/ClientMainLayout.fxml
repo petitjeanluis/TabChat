@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientMainController">
+   <children>
+      <BorderPane layoutY="-7.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <GridPane BorderPane.alignment="TOP_LEFT">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="settingsButton" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#settingsClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/settings-icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="createChatButton" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#addChatClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                     <image>
+                        <Image url="@../images/add-icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="addFriendButton" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#addFriendClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@../images/add-friend-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+         </bottom>
+         <top>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="TabChat" textAlignment="CENTER" textFill="#808a8f" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+         </top>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <center>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <ListView fx:id="chatList" onMouseClicked="#chatListClicked" prefHeight="200.0" prefWidth="313.0" />
+                  <ListView fx:id="onlineClientList" prefHeight="200.0" prefWidth="167.0" />
+               </children></HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
